@@ -1,5 +1,6 @@
 import java.util.Stack;
 import java.util.Iterator;
+import java.util.Collections;
 
 public class LoopCollection {
     public static void main(String[] args) {
@@ -8,7 +9,12 @@ public class LoopCollection {
         fruits.add("Orange");
         fruits.add("Watermelon");
         fruits.add("Leci");
+        fruits.add("Mango");
+        fruits.add("guava");
+        fruits.add("avocado");
         fruits.push("Salak");
+
+        Collections.sort(fruits);
 
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
@@ -31,7 +37,7 @@ public class LoopCollection {
         System.out.println("");
         fruits.stream().forEach(e -> {
             System.out.printf("%s ", e);
-        }); 
+        });
         System.out.println("");
         for (int i = 0; i < fruits.size(); i++) {
             System.out.printf("%s ", fruits.get(i));
